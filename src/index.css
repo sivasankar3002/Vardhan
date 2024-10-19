@@ -1,0 +1,65 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.bg-telugu-cinema {
+  background-image: url('https://source.unsplash.com/random/1920x1080?telugu+cinema');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.3d-effect {
+  perspective: 1000px;
+}
+
+.3d-effect:hover {
+  transform: rotateY(15deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes firework {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-firework {
+  animation: firework 1s ease-out forwards;
+}
